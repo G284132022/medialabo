@@ -19,7 +19,7 @@ function hantei() {
   kaisu++;
   console.log(kaisu+"回目の予想:"+yoso);
   } if(kaisu>=4){
-    console.log("答えは"+kotae+"でした。"+"すでにゲームは終わっています。");
+    console.log("答えは"+kotae+"でした。すでにゲームは終わっています。");
   }else{
       if(yoso===kotae){
     console.log("正解です。おめでとうございます。");
