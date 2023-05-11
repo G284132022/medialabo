@@ -18,15 +18,18 @@ function hantei() {
   let yoso = 4;
   kaisu++;
   console.log(kaisu+"回目の予想:"+yoso);
-  } if(kaisu>=4){
+ } if(kaisu>=4){
     console.log("答えは"+kotae+"でした。すでにゲームは終わっています。");
-  } else if(yoso===kotae){
-    console.log("正解です。おめでとうございます。");
-  } else if (yoso<kotae){
-    console.log("残念、もっと小さいですよ。");
-  } else {
-    console.log("残念、もっと大きいですよ。");
-  }
+} if (kaisu===3){
+  console.log("まちがい、答えは"+kotae+"です。");
+}   if (yoso===kotae){
+  console.log("おめでとう、正解です。");
+}  if(kotae>yoso){
+  console.log("残念、もっと大きいですよ。");
+} else {
+  console.log("残念、もっと小さいですよ。");
+} 
+
   
   // 課題3-1: 正解判定する
   
