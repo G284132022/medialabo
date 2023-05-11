@@ -22,7 +22,7 @@ function hantei() {
     console.log("答えは"+kotae+"でした。すでにゲームは終わっています。");
   } else if(yoso===kotae){
     console.log("正解です。おめでとうございます。");
-  } if (yoso>kotae){
+  } else if (yoso<kotae){
     console.log("残念、もっと小さいですよ。");
   } else {
     console.log("残念、もっと大きいですよ。");
