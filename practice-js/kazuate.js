@@ -3,7 +3,10 @@ console.log('答え（デバッグ用）: ' + kotae);
 
 // 入力回数（予想回数）
 let kaisu = 0;
-
+function foo(s) {
+    console.log(s);
+    kaisu = kaisu + 1;
+}
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
@@ -18,6 +21,8 @@ function hantei() {
   let yoso = 4;
   
   // 課題3-1: 正解判定する
+  console.log("まちがい、もっと小さいですよ。");
+  console.log("まちがい、残念でした答えはです。");
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
 }
