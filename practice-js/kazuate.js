@@ -22,12 +22,12 @@ kaisu++;
     console.log("答えは"+kotae+"でした。"+"ゲームはすでに終わっています。");
    } else if (kaisu===3){
     console.log("まちがい、残念でした答えは"+kotae+"です。");
-   } else if (kotae<yoso){
-    console.log("まちがい答えはもっと大きいですよ。");
-   }  if (kotae>yoso){
+   }  if (kotae===yoso){
+    console.log("正解、です。おめでとう");
+   } else if (kotae>yoso){
     console.log("まちがい答えはもっと小さいですよ。");
-   } else {
-    console.log("正解です。おめでとう！");
+   } else if (kotae<yoso) {
+    console.log("まちがい、答えはもっと大きいですよ。");
    }
 
   
