@@ -7,16 +7,16 @@ let data = {
     {
       "id": 803,
       "main": "Clouds",
-      "description": "曇りがち",
+      description: "曇りがち",
       "icon": "04d"
     }
   ],
   "base": "stations",
-  "main": {
+  main: {
     "temp": 9.94,
     "feels_like": 8.65,
-    "temp_min": 9.94,
-    "temp_max": 9.94,
+    temp_min: 9.94,
+    temp_max: 9.94,
     "pressure": 1022,
     "humidity": 14,
     "sea_level": 1022,
@@ -41,9 +41,13 @@ let data = {
   },
   "timezone": 28800,
   "id": 1816670,
-  "name": "北京市",
+  name: "北京市",
   "cod": 200
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-
+console.log("北京市の天気予報");
+console.log(data.name);
+console.log("最高気温:"+temp_min);
+console.log("最低気温:"+temp_max);
+console.log(description);
