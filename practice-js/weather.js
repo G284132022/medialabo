@@ -12,11 +12,11 @@ let data = {
     }
   ],
   "base": "stations",
-  main:[ {
+  "main":[ {
     "temp": 9.94,
     "feels_like": 8.65,
-    temp_min: "9.94",
-    temp_max: "9.94",
+    "temp_min": 9.94,
+    "temp_max": 9.94,
     "pressure": 1022,
     "humidity": 14,
     "sea_level": 1022,
@@ -48,6 +48,6 @@ let data = {
 ////////// 課題3-2 ここからプログラムを書こう
 console.log("北京市の天気予報");
 console.log(data.name);
-for(let n of data){
-console.log("最高気温:"+n.main);
-}
+
+console.log("最高気温:");
+console.log("最低気温:");
