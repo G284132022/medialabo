@@ -27,10 +27,13 @@ kaisu++;
     console.log("残念、もっと小さいよ");
   } else if(kotae>yoso){
     console.log("残念、もっと大きいですよ。");
-  }else{
+  }else {
     console.log("正解、おめでとう！");
+  }if(yoso==kotae){
+    kaisu=4;
   }
  }
+ 
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
  }
  
