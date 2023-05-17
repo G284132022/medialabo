@@ -1,8 +1,8 @@
 let data = {
-  "coord": {
+  "coord":[ {
     "lon": 116.3972,
     "lat": 39.9075
-  },
+  }],
   "weather": [
     {
       "id": 803,
@@ -23,22 +23,22 @@ let data = {
     "grnd_level": 1016
   }],
   "visibility": 10000,
-  "wind": {
+  "wind":[ {
     "speed": 2.65,
     "deg": 197,
     "gust": 4.84
-  },
+  }],
   "clouds": {
     "all": 53
   },
   "dt": 1646542386,
-  "sys": {
+  "sys":[ {
     "type": 1,
     "id": 9609,
     "country": "CN",
     "sunrise": 1646520066,
     "sunset": 1646561447
-  },
+  }],
   "timezone": 28800,
   "id": 1816670,
   name: "北京市",
