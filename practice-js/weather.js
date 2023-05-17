@@ -48,8 +48,18 @@ let data = {
 ////////// 課題3-2 ここからプログラムを書こう
 
 console.log("北京市の天気予報");
-console.log(data.name);
+console.log(data.id+data.name);
 for(let n of data.main){
 console.log("最高気温:"+n.temp_max);
 console.log("最低気温:"+n.temp_min);
+console.log("湿度"+n.humidity);
+}for(let a of data.coord){
+  console.log("緯度"+a.lon);
+  console.log("軽度"+a.lat);
+}for(let b of data.weather){
+  console.log("天気"+b.description);
+}for(let c of data.wind){
+  console.log("風速"+c.speed);
+  console.log("風向"+c.deg);
+  
 }
