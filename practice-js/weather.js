@@ -49,5 +49,5 @@ let data = {
 console.log("北京市の天気予報");
 console.log(data.name);
 
-console.log("最高気温:");
-console.log("最低気温:");
+console.log("最高気温:"+n.main);
+console.log("最低気温:"+n.main);
