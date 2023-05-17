@@ -46,8 +46,11 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
+
 console.log("北京市の天気予報");
+for(let n of data){
 console.log(data.name);
 
-console.log("最高気温:"+n.main);
-console.log("最低気温:"+n.main);
+console.log("最高気温:"+n.data.main.temp_max);
+console.log("最低気温:"+n.data.main.temp_min);
+}
