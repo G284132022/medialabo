@@ -16,14 +16,30 @@ let data = [
 // 練習4-2 メッセージ追加プログラム
 let n =document.createElement('p');
 n.textContent='写真表と都市の緯度軽度のページです。'
-n.style.text-emphasiss='sesame green';
+n.setAttribute('style','sesame green');;
 // 練習4-3 写真表作成プログラム
 let div =  document.querySelector('div#phototable');
-let p = document.createElement('p'); 
-beeLink.setAttribute('href', ');
-
+let beeLink = document.createElement('p');
+n =document.createElement('img');
+n.setAttribute('src',"taro.png");
+beeLink.insertAdjacentElement('beforeend',n);  
+div.insertAdjacentElement('beforeend', beeLink); 
+let div2 = document.querySelector('div#phototable');
+ let beeLink2 = document.createElement('p');
+ a =document.createElement('img');
+ a.setAttribute('src',"jiro.png");
+ beeLink2.insertAdjacentElement('beforeend',a); 
+ div2.insertAdjacentElement('beforeend', beeLink2); 
+ let div3 = document.querySelector('div#phototable');
+ let beeLink3 = document.createElement('p');
+ c =document.createElement('img');
+ c.setAttribute('src',"hanako.png");
+ beeLink3.insertAdjacentElement('beforeend',c); 
+ div3.insertAdjacentElement('beforeend', beeLink3); 
 // 練習4-4 箇条書き削除プログラム
-
-
+let ps3 = document.querySelectorAll('ul#location > li'); 
+for(let n of ps3){        
+	n.remove();
+}                         
 // 練習4-5 箇条書き追加プログラム
 
