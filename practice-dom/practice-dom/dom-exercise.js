@@ -14,8 +14,9 @@ let data = [
 //// 注意: 以上は編集しないこと!
 
 // 練習4-2 メッセージ追加プログラム
-
-
+let n =document.createElement('p');
+n.textContent='写真表と都市の緯度軽度のページです。'
+n.style.text-emphasiss='sesame green';
 // 練習4-3 写真表作成プログラム
 
 
