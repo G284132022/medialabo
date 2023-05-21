@@ -42,4 +42,6 @@ for(let n of ps3){
 	n.remove();
 }                         
 // 練習4-5 箇条書き追加プログラム
-
+for(let n of data.name){
+let b =document.createElement('li');
+}
