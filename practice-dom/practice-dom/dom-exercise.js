@@ -15,8 +15,8 @@ let data = [
 
 // 練習4-2 メッセージ追加プログラム
 let n =document.createElement('p');
-n.textContent='写真表と都市の緯度軽度のページです。'
-n.setAttribute('style','sesame green');;
+n.textContent='写真表と都市の緯度軽度のページです。';
+n.setAttribute('style','sesame green');
 // 練習4-3 写真表作成プログラム
 let div =  document.querySelector('div#phototable');
 let beeLink = document.createElement('p');
@@ -42,9 +42,11 @@ for(let n of ps3){
 	n.remove();
 }                         
 // 練習4-5 箇条書き追加プログラム
+let h2 = document.querySelector('ul#location'); 
 for(let n of data){
 	let li =document.createElement('li');
-	li.textContent = n.name;
-}
+	li.textContent = n.name+',,,緯度:'+n.lat+'経度'+n.lng;
+	h2.insertAdjacentElement('afterend', li);
+} 
 
 
