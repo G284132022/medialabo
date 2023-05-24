@@ -35,8 +35,9 @@ kaisu++;
  }
  
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
- } let n =document.querySelector('p#ansewer');
-      let a = document.createElement('p');                                                                                                                                             
+ } let n =document.querySelector('span#kaisu');
+      let a = document.createElement('p');   
+      a.textContent =;                                                                                                                                         
       n.insertAdjacentElement('beforeend', a); 
  
   
