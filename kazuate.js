@@ -35,20 +35,12 @@ kaisu++;
  }
  
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
- }
- 
+ } let n =document.querySelector('p#ansewer');
+      let a = document.createElement('p');                                                                                                                                             
+      n.insertAdjacentElement('beforeend', a); 
  
   
   
-
-  // if(yoso===kotae){
-  //   console.log("正解です。おめでとうございます。");
-  // }
-  // else if(kotae>yoso ){
-  //   console.log("残念、もっと大きいです。");
-  // } else if(kotae<yoso){
-  //   console.log("残念、もっと小さいです。");
-  // }
 
   
   // 課題3-1: 正解判定する
