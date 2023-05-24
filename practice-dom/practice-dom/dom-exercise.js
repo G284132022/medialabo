@@ -15,7 +15,7 @@ let data = [
 
 // 練習4-2 メッセージ追加プログラム
 let n =document.createElement('p');
-n.textContent='写真表と都市の緯度軽度のページです。';
+n.textContent='写真表と都市の緯度軽度のページです。'
 n.setAttribute('style','sesame green');
 // 練習4-3 写真表作成プログラム
 let div =  document.querySelector('div#phototable');
