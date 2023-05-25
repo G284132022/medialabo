@@ -60,6 +60,7 @@ console.log("湿度"+n.humidity);
   console.log("天気"+b.description);
 }for(let c of data.wind){
   console.log("風速"+c.speed);
-  console.log("風向"+c.deg);
-  
+  console.log("風向"+c.deg); 
 }
+let n =document.querySelector('p#ID'); 
+   n.textContent=data.id+data.name;
