@@ -47,7 +47,8 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 
-
+let b = document.querySelector('#result');
+b.addEventListener('click', sendRequest);
    
    
 
