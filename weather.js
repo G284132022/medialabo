@@ -47,7 +47,7 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 
-let b = document.querySelector('#result');
+let b = document.querySelector('#btn');
 b.addEventListener('click', sendRequest);
    
    
@@ -71,8 +71,10 @@ function showResult(resp) {
     
     if (typeof data === 'string') {
         data = JSON.parse(data);
-    }
-    let b2 =document.querySelector('li#result');
+    } 
+    
+    let b2 =document.querySelector('li#btn');
+    b2.insertAdjacentElement('beforeend', A);
     b2.textContent='北京市の天気予報';
     b2.textContent=(data.id+data.name);
     for(let n of data.main){
