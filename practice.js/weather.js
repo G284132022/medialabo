@@ -47,34 +47,60 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 
-console.log("北京市の天気予報");
-console.log(data.id+data.name);
-for(let n of data.main){
-console.log("最高気温:"+n.temp_max);
-console.log("最低気温:"+n.temp_min);
-console.log("湿度"+n.humidity);
-}for(let a of data.coord){
-  console.log("緯度"+a.lon);
-  console.log("軽度"+a.lat);
-}for(let b of data.weather){
-  console.log("天気"+b.description);
-}for(let c of data.wind){
-  console.log("風速"+c.speed);
-  console.log("風向"+c.deg); 
-}
 
    
-   let b = document.querySelector('button#btn');
-b.addEventListener('click', showSelectResult);
+   
 
-function showSelectResult() {
-    let s = document.querySelector('select#santaro');
-    let idx = s.selectedIndex;  // idx 番目の option が選択された
+function sendRequest() {
+    
+    let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/1816670.json';
 
-    let os = s.querySelectorAll('option');  // s の子要素 option をすべて検索
-    let o = os.item(idx);       // os の idx 番目の要素
+    
+    axios.get(url)
+        .then(showResult)   
+        .catch(showError)   
+        .then(finish);      
+}
 
-    console.log('選択された ' + idx + ' 番目の option の情報:');
-    console.log('  value=' + o.getAttribute('value'));  // id 属性を表示
-    console.log('  textContent='+o.textContent);
+
+function showResult(resp) {
+    
+    let data = resp.data;
+
+    
+    if (typeof data === 'string') {
+        data = JSON.parse(data);
+    }
+    let b2 =document.querySelector('li#result');
+    b2.textContent='北京市の天気予報';
+    b2.textContent=(data.id+data.name);
+    for(let n of data.main){
+      b2.textContent=("最高気温:"+n.temp_max);
+      b2.textContent=("最低気温:"+n.temp_min);
+      b2.textContent=("湿度"+n.humidity);
+    }for(let a of data.coord){
+      b2.textContent=("緯度"+a.lon);
+      b2.textContent=("軽度"+a.lat);
+    }for(let b of data.weather){
+      b2.textContent=("天気"+b.description);
+    }for(let c of data.wind){
+      b2.textContent=("風速"+c.speed);
+      b2.textContent=("風向"+c.deg); 
+    }
+    
+    
+    
+
+    
+    
+}
+
+
+function showError(err) {
+    console.log(err);
+}
+
+
+function finish() {
+    console.log('Ajax 通信が終わりました');
 }
