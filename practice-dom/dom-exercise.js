@@ -42,11 +42,12 @@ for(let n of ps3){
 	n.remove();
 }                         
 // 練習4-5 箇条書き追加プログラム
-let h2 = document.querySelector('ul#location'); 
-for(let n of data){
-	let li =document.createElement('li');
-	li.textContent = n.name+',,,緯度:'+n.lat+'経度'+n.lng;
-	h2.insertAdjacentElement('afterend', li);
-} 
+let eft = document.querySelector('ul#location');
+let g;
+for (let f of data) {
+  g = document.createElement('li');
+  g.textContent = f.name + '... 緯度:' + f.lat + ',経度:' + f.lng;
+  eft.insertAdjacentElement('beforeend',g);
+}
 
 
