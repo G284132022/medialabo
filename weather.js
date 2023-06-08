@@ -72,23 +72,25 @@ function showResult(resp) {
     if (typeof data === 'string') {
         data = JSON.parse(data);
     } 
-    
-    let b2 =document.querySelector('li#btn');
-    b2.insertAdjacentElement('beforeend', A);
-    b2.textContent='北京市の天気予報';
-    b2.textContent=(data.id+data.name);
+    let A1 = document.createElement('li');
+    let b2 =document.querySelector('span#btn');
+    b2.textContent(data.weather[0].description);
+
+    let A = document.querySelector('span#btn');
+    A.textContent=(data.id+data.name);
+
     for(let n of data.main){
-      b2.textContent=("最高気温:"+n.temp_max);
-      b2.textContent=("最低気温:"+n.temp_min);
-      b2.textContent=("湿度"+n.humidity);
+      A.textContent=("最高気温:"+n.temp_max);
+      A.textContent=("最低気温:"+n.temp_min);
+      A.textContent=("湿度"+n.humidity);
     }for(let a of data.coord){
-      b2.textContent=("緯度"+a.lon);
-      b2.textContent=("軽度"+a.lat);
+      A.textContent=("緯度"+a.lon);
+      A.textContent=("軽度"+a.lat);
     }for(let b of data.weather){
-      b2.textContent=("天気"+b.description);
+      A.textContent=("天気"+b.description);
     }for(let c of data.wind){
-      b2.textContent=("風速"+c.speed);
-      b2.textContent=("風向"+c.deg); 
+      A.textContent=("風速"+c.speed);
+      A.textContent=("風向"+c.deg); 
     }
     
     
