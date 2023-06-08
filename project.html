@@ -11,28 +11,31 @@
   </head>
   <body>
     <h1>世界の天気</h1>
-    <label for="santaro">都市名</label>
-    <select name="santaro" id="santaro">
-        <option value="">都市名を選んでください。</option>
-        <option value="momo">360630 ... Cairo カイロ</option>
-        <option value="kin">524901 ... Moscow モスクワ</option>
-        <option value="urashima">993800 ... Johannesburg ヨハネスブルク</option>
-        <option value="pekin">1816670 ... Beijing 北京 </option>
-        <option value="tokyo">1850147 ... Tokyo 東京  </option>
-        <option value="singapol">1880252 ... Singapore シンガポール </option>
-        <option value="sydney">  2147714 ... Sydney シドニー</option>
-        <option value="london">2643743 ... London ロンドン </option>
-        <option value="paris">2968815 ... Paris パリ  </option>
-        <option value="rio">3451189 ... Rio de Janeiro リオデジャネイロ </option>
-        <option value="newyork">5128581 ... New York ニューヨーク  </option>
-        <option value="Los">5368361 ... Los Angeles ロサンゼルス   </option>
-    </select>
-    <button id="btn">検索</button>
+    <label for="shimei">都市ID: </label>
+    <input type="text" name="shimei" id="shimei" size="10">
+    <button id="print">検索</button>
+   <ul>
+    <li>360630 ... Cairo カイロ （エジプト）</li>
+    <li>524901 ... Moscow モスクワ （ロシア）</li>
+    <li>993800 ... Johannesburg ヨハネスブルク （南アフリカ）</li>
+    <li>1816670 ... Beijing 北京 （中華人民共和国）</li>
+    <li>1850147 ... Tokyo 東京 （日本）</li>
+    <li>1880252 ... Singapore シンガポール</li>
+    <li>2147714 ... Sydney シドニー （オーストラリア）</li>
+    <li>2643743 ... London ロンドン （イギリス）</li>
+    <li>2968815 ... Paris パリ （フランス）</li>
+    <li>3451189 ... Rio de Janeiro リオデジャネイロ （ブラジル）</li>
+    <li>5128581 ... New York ニューヨーク （アメリカ合衆国）</li>
+    <li>5368361 ... Los Angeles ロサンゼルス （アメリカ合衆国）</li>
+
+   </ul>
     <li>検索すると以下の表示が出ます。最高気温、最低気温、天気など</li>
 
 
-
-    <p><span id="btn">　</span>の天気予報</p>
+    <p id="toshi"></p>
+    <p id="weather"></p>
+    <p id="maxweather"></p>
+    <p id="minweather"></p>
   </body>
   
   
